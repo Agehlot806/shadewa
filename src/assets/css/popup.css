@@ -1,0 +1,32 @@
+.edit-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  color: white;
+}
+.button-container {
+  margin-left: 900px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin-left: 10px; /* Adjust the margin as per your preference */
+}
+
+.badge {
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+}
