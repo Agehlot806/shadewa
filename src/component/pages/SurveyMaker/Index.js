@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "../../directives/sidebar";
 import { Col, Container, Row, Table } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import { Button, Dropdown, DropdownButton, Form } from "react-bootstrap";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -46,9 +46,12 @@ function Index() {
             </div>
 
             <div className="button-container">
-              <Button variant="dark" style={{ color: "white" }}>
-                create new survey
-              </Button>
+              <Link to="/response">
+                {" "}
+                <Button variant="dark" style={{ color: "white" }}>
+                  create new survey
+                </Button>
+              </Link>
             </div>
 
             <Row>

@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "../../directives/sidebar";
 import Card from "react-bootstrap/Card";
 import { Container } from "react-bootstrap";
+import "../../../assets/css/popup.css";
 function Response1() {
   return (
     <>
@@ -14,7 +15,7 @@ function Response1() {
                 <h2>Survey Maker</h2>
               </div>
               <Card>
-                <Card.Body>0 Response</Card.Body>
+                <Card.Body> 18 Response</Card.Body>
               </Card>
             </Container>
           </div>
