@@ -1,15 +1,13 @@
-import React,{ useState } from "react";
+import React from "react";
 import Sidebar from "../../directives/sidebar";
-import { Form } from "react-router-dom";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 
-function response() {
-  const [inputValue, setInputValue] =useS
-
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
+function Index() {
+  const cardStyle = {
+    width: "600px",
+    margin: "0px 145px 0px", // Adjust the multiplier as needed for desired width
   };
-
   return (
     <div>
       <Sidebar />
@@ -19,23 +17,9 @@ function response() {
             <div className="main-heading">
               <h2>Survey Maker</h2>
             </div>
-
-            <Row>
-              <Col lg={12}>
-                <Form>
-                  <Form.Group controlId="formInput">
-                    <Form.Label>Input Field</Form.Label>
-                    <Form.Control
-                      type="text"
-                      value={inputValue}
-                      onChange={handleInputChange}
-                    />
-                  </Form.Group>
-
-                  
-                </Form>
-              </Col>
-            </Row>
+            <Card style={cardStyle}>
+              <Card.Body>0 Response</Card.Body>
+            </Card>
           </Container>
         </div>
       </div>
@@ -43,4 +27,4 @@ function response() {
   );
 }
 
-export default response;
+export default Index;

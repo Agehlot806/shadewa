@@ -20,6 +20,7 @@ import Surveymaker from "./component/pages/SurveyMaker/Index";
 import Salesfoureadd from "./component/pages/salesfoureadd";
 import Hubsportc from "./component/pages/hubsportc";
 import Response from "./component/pages/SurveyMaker/Response";
+import Response1 from "./component/pages/SurveyMaker/Response1";
 function App() {
   return (
     <>
@@ -44,6 +45,8 @@ function App() {
           <Route path="/hubsport" element={<Hubsportc />} />
 
           <Route path="/response" element={<Response />} />
+
+          <Route path="/response1" element={<Response1 />} />
         </Routes>
       </BrowserRouter>
     </>
